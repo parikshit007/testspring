@@ -59,10 +59,11 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.20.0</version>
                 <configuration>
-                    <!--<dockerHost>tcp://REMOTE_IP:2375</dockerHost>-->
+                    <dockerHost>tcp://localhost:2375</dockerHost>
                     <images>
                         <image>
                             <name>docker-spring-boot:${project.version}</name>
+
                             <alias>springboot--dockerimage</alias>
                             <build>
                                 <dockerFileDir>${project.basedir}</dockerFileDir>
