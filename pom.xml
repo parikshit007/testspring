@@ -59,7 +59,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.20.0</version>
                 <configuration>
-                    <dockerHost>http://127.0.0.1:2375</dockerHost>
+                    <dockerHost>npipe:////./pipe/docker_engine</dockerHost>
                     <images>
                         <image>
                             <name>docker-spring-boot:${project.version}</name>
