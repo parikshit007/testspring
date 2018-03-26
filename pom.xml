@@ -59,7 +59,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.20.0</version>
                 <configuration>
-                    <dockerHost>tcp://localhost:2375</dockerHost>
+                    <dockerHost>http://localhost:2375</dockerHost>
                     <images>
                         <image>
                             <name>docker-spring-boot:${project.version}</name>
