@@ -59,7 +59,8 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.20.0</version>
                 <configuration>
-                    <dockerHost>http://localhost:2375</dockerHost>
+                    <dockerHost>tcp://192.168.99.100:2376</dockerHost>
+                    <certPath>${project.basedir}/docker-client-certs</certPath>
                     <verbose>true</verbose>
                     <images>
                         <image>
